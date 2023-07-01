@@ -3,18 +3,18 @@ package com.example.demo;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Course {
+public class CourseConfiguration {
 	private long id;
 	private String name;
 	private String author;
 
-	public Course() {
+	public CourseConfiguration() {
 		this.id = 18;
 		this.name = "Aug";
 		this.author = "2020";
 	}
 
-	public Course(long id, String name, String author) {
+	public CourseConfiguration(long id, String name, String author) {
 		super();
 		this.id = id;
 		this.name = name;

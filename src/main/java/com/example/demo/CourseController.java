@@ -9,25 +9,25 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CourseController {
 	@RequestMapping("/courses")
-	public List<Course> retrieveAllCourses() {
+	public List<CourseConfiguration> retrieveAllCourses() {
 		// var cl = SpringApplication.run(DemoApplication.class);
 		// Course c = cl.getBean(Course.class);
 		// System.out.println(c.toString());
 		return Arrays.asList(
 
-				new Course(1, "Learn AWS", "in28minutes"),
-				new Course(2, "Learn GCP", "in28minutes"),
-				new Course(300, "Learn AZURE", "in28minutes"));
+				new CourseConfiguration(1, "Learn AWS", "in28minutes"),
+				new CourseConfiguration(2, "Learn GCP", "in28minutes"),
+				new CourseConfiguration(300, "Learn AZURE", "in28minutes"));
 	}
 
 	@RequestMapping("/course")
-	public List<Course> retrieveoneCourses() {
+	public List<CourseConfiguration> retrieveoneCourses() {
 		// var cl = SpringApplication.run(DemoApplication.class);
 		// Course c = cl.getBean(Course.class);
 		// System.out.println(c.toString());
 		return Arrays.asList(
 
-				new Course(1, "Learn AWS", "in28minutes"));
+				new CourseConfiguration(1, "Learn AWS", "in28minutes"));
 	}
 
 }

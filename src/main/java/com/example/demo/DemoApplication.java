@@ -8,7 +8,7 @@ public class DemoApplication {
 
 	public static void main(String[] args) {
 		var cl = SpringApplication.run(DemoApplication.class, args);
-		Course c = cl.getBean(Course.class);
+		CourseConfiguration c = cl.getBean(CourseConfiguration.class);
 		System.out.println(c.toString());
 
 	}
